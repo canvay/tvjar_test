@@ -4,6 +4,14 @@ plugins {
 }
 
 repositories {
+    // 阿里云公共镜像仓库
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    
+    // 其他官方仓库（作为备用）
+    mavenCentral()
+    google()
     jcenter()
 }
 
@@ -11,7 +19,7 @@ dependencies {
     testImplementation 'junit:junit:4.13'
 
     implementation "org.jsoup:jsoup:1.14.1"
-    implementation "org.json:json:20180813"
+    implementation "org.json:json:20231013"
     implementation "com.squareup.okhttp3:okhttp:3.12.13"
 
 
